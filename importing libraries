@@ -1,0 +1,20 @@
+import tensorflow as tf
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from wordcloud import WordCloud,STOPWORDS
+import re
+from nltk.stem import PorterStemmer, WordNetLemmatizer
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize, sent_tokenize
+import gensim
+from gensim.utils import simple_preprocess
+from gensim.parsing.preprocessing import STOPWORDS
+from tensorflow.keras.preprocessing.text import one_hot,Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.models import Sequential,Model
+from tensorflow.keras.layers import Dense, Flatten,Embedding,LSTM,Conv1D,Input,MaxPool1D,Bidirectional
+#!pip install jupyterthemes
+from jupyterthemes import jtplot
+jtplot.style(theme = "monokai", context = "notebook", ticks = True, grid = False)
